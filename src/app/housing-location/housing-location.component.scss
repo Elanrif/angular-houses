@@ -1,12 +1,14 @@
-:root {
+:host {
     --accent-color: #37c5f4;
     --primary-color: #5324ed;
+    --secondary-color: #ececf9;
 }
 
 .listing {
-    background: #e6ebf7;
+    background: var(--secondary-color);
     border-radius: 20px;
     padding-bottom: 30px;
+    height: 400px;
 }
 
 .listing-heading {
