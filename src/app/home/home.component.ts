@@ -13,17 +13,16 @@ import { HousingLocation } from '../housing-location';
       </form>
     </section>
     <section class="results">
-      <app-housing-location />
+      <app-housing-location [housingLocation]="housingLocation" />
     </section>
   `,
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  
   readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
 
   housingLocation: HousingLocation = {
-    id : 9999,
+    id: 9999,
     name: 'Test Home',
     city: 'Test city',
     state: 'ST',
@@ -31,5 +30,5 @@ export class HomeComponent {
     availableUnits: 99,
     wifi: true,
     laundry: false,
-  }
+  };
 }
