@@ -1,3 +1,11 @@
+:root {
+    --primary-color: rgb(106, 45, 249);
+}
+
+main {
+    margin-bottom: 30px;
+}
+
 img {
     width: 100px;
     height: 100px;
@@ -9,6 +17,7 @@ img {
     grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
     margin-top: 50px;
     justify-content: space-around;
+    margin-bottom: 5px;
 }
 
 input[type="text"] {
