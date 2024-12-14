@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { HousingLocationComponent } from './housing-location/housing-location.component';
-
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, HomeComponent],
-  template: ` <main>
+  template: ` 
+  <main>
     <header class="brand-name">
       <img
         class="brand-logo"
@@ -18,13 +17,8 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
     <section class="content">
       <app-home />
     </section>
-    <section>
-      <form>
-        <input type="text" placeholder="Filter by city" />
-        <button class="primary" type="button">Search</button>
-      </form>
-    </section>
-  </main>`,
+  </main>
+  `,
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
