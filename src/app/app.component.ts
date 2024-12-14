@@ -1,23 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeComponent],
-  template: ` 
-  <main>
-    <header class="brand-name">
-      <img
-        class="brand-logo"
-        src="assets/logo.png"
-        alt="logo"
-        aria-hidden="true"
-      />
-    </header>
-    <section class="content">
-      <router-outlet />
-    </section>
-  </main>
+  imports: [RouterOutlet, RouterLink],
+  template: `
+    <main>
+      <a [routerLink]="['/']" >
+        <header class="brand-name">
+          <img
+            class="brand-logo"
+            src="assets/logo.png"
+            alt="logo"
+            aria-hidden="true"
+          />
+        </header>
+      </a>
+      <section class="content">
+        <router-outlet />
+      </section>
+    </main>
   `,
   styleUrl: './app.component.scss',
 })
